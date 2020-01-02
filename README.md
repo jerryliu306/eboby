@@ -1,4 +1,4 @@
-# **EBody** [![](https://gitee.com/tyoui/logo/raw/master/logo/photolog.png)][1]
+# **EBoby** [![](https://gitee.com/tyoui/logo/raw/master/logo/photolog.png)][1]
 
 ## 实体抽取模块
 [![](https://img.shields.io/badge/Python-3.7-green.svg)]()
