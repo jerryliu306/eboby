@@ -23,7 +23,7 @@ def summary():
         tf = traceback.format_exc()
         logging.getLogger('error').error(tf)
         return jsonify({'code': 400, 'msg': str(e)})
-    return jsonify({'code': 200, 'msg': "success", "data": result})
+    return jsonify(data=result, msg='ok'), 200
 
 
 @app.route('/keyWord', methods=['POST', 'GET'])
@@ -38,7 +38,7 @@ def keyword():
         tf = traceback.format_exc()
         logging.getLogger('error').error(tf)
         return jsonify({'code': 400, 'msg': str(e)})
-    return jsonify({'code': 200, 'msg': "success", "data": result})
+    return jsonify(data=result, msg='ok'), 200
 
 
 @app.route('/st', methods=['POST', 'GET'])
@@ -48,12 +48,11 @@ def st():
     try:
         word = data.get('data')
         result = extract_st(word)
-        print(result)
     except Exception as e:
         tf = traceback.format_exc()
         logging.getLogger('error').error(tf)
         return jsonify({'code': 400, 'msg': str(e)})
-    return jsonify({'code': 200, 'msg': "success", "data": result})
+    return jsonify(data=result, msg='ok'), 200
 
 
 if __name__ == '__main__':
