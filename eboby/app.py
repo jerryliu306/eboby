@@ -48,6 +48,7 @@ def st():
     try:
         word = data.get('data')
         result = extract_st(word)
+        print(result)
     except Exception as e:
         tf = traceback.format_exc()
         logging.getLogger('error').error(tf)

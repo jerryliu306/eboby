@@ -40,4 +40,5 @@ def extract_keyword(word, num=3):
 def extract_st(word):
     """抽取实体"""
     data = ernie_match(word, st)
+    print(data)
     return data
