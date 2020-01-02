@@ -1,0 +1,4 @@
+Flask
+jtyoui
+jpype1
+paddlepaddle==1.6.1
