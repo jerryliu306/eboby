@@ -47,7 +47,6 @@ def st():
     data = jtyoui.flask_content_type(request)
     try:
         word = data.get('data')
-        word = word.replace(' ', '')
         data, addr, person, org = extract_st(word)
     except Exception as e:
         tf = traceback.format_exc()

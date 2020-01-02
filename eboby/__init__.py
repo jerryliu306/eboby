@@ -39,7 +39,7 @@ def extract_keyword(word, num=3):
 
 def extract_st(word):
     """抽取实体"""
-    data = ernie_match(word, st)
+    data, word = ernie_match(word, st)
     data = [int(d) for d in data]
     addr = jtyoui.key_value_re(word, data, value_re='[45]+')
     person = jtyoui.key_value_re(word, data, value_re='[01]+')
