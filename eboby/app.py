@@ -47,12 +47,12 @@ def st():
     data = jtyoui.flask_content_type(request)
     try:
         word = data.get('data')
-        result = extract_st(word)
+        data, addr, person, org = extract_st(word)
     except Exception as e:
         tf = traceback.format_exc()
         logging.getLogger('error').error(tf)
         return jsonify({'code': 400, 'msg': str(e)})
-    return jsonify(data=result, msg='ok'), 200
+    return jsonify(data=data, address=addr, person=person, org=org, msg='ok'), 200
 
 
 if __name__ == '__main__':
