@@ -66,8 +66,11 @@ curl -i -X POST \
 
 ## 摘要接口文档
 url：http://xxx.xxx.xxx.xxx:9000/summary
+
 methods：POST
+
 格式：JSON
+
 body：UTF-8
 
 ### 请求报文
@@ -91,8 +94,11 @@ body：UTF-8
 
 ## 关键字抽取接口文档
 url：http://xxx.xxx.xxx.xxx:9000/keyWord
+
 methods：POST
+
 格式：JSON
+
 body：UTF-8
 
 ### 请求报文
@@ -116,8 +122,11 @@ body：UTF-8
 
 ## 抽取实体接口文档
 url：http://xxx.xxx.xxx.xxx:9000/st
+
 methods：POST
+
 格式：JSON
+
 body：UTF-8
 
 ### 请求报文
